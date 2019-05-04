@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -514,10 +515,10 @@
           <p>Cập nhật những thông tin mới nhất từ SheCodesVietnam</p>
         </div>
 
-        <form method="POST" action="#">
+        <form name="sentMessage" id="gform" method="POST" class="pure-form pure-form-stacked" role="form" class="contactForm" data-email="example@email.net" action="https://script.google.com/macros/s/AKfycbwG2CdZz2csuAvmOzJMngLE2ordNWpGKMXWxcF0/exec">
           <div class="form-row justify-content-center">
             <div class="col-auto">
-              <input type="text" class="form-control" placeholder="Email">
+               <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
             </div>
             <div class="col-auto">
               <button type="submit">Subscribe</button>
@@ -527,40 +528,6 @@
 
       </div>
     </section>
-      <!-- Modal Order Form -->
-      <div id="buy-ticket-modal" class="modal fade">
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title">Buy Tickets</h4>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <form method="POST" action="#">
-                <div class="form-group">
-                  <input type="text" class="form-control" name="your-name" placeholder="Your Name">
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" name="your-email" placeholder="Your Email">
-                </div>
-                <div class="form-group">
-                  <select id="ticket-type" name="ticket-type" class="form-control" >
-                    <option value="">-- Select Your Ticket Type --</option>
-                    <option value="standard-access">Standard Access</option>
-                    <option value="pro-access">Pro Access</option>
-                    <option value="premium-access">Premium Access</option>
-                  </select>
-                </div>
-                <div class="text-center">
-                  <button type="submit" class="btn">Buy Now</button>
-                </div>
-              </form>
-            </div>
-          </div><!-- /.modal-content -->
-        </div><!-- /.modal-dialog -->
-      </div><!-- /.modal -->
 
     </section>
 
@@ -578,7 +545,7 @@
         <div class="form">
           <div id="sendmessage">Your message has been sent. Thank you!</div>
           <div id="errormessage"></div>
-          <form action="" method="post" role="form" class="contactForm">
+          <form name="sentMessage" id="gform" method="POST" class="pure-form pure-form-stacked" role="form" class="contactForm" data-email="example@email.net" action="https://script.google.com/macros/s/AKfycbwG2CdZz2csuAvmOzJMngLE2ordNWpGKMXWxcF0/exec">
             <div class="form-row">
               <div class="form-group col-md-6">
                 <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
