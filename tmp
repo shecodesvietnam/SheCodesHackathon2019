@@ -1,2 +1,0 @@
-    document.getElementById("count_down").innerHTML = "<span>" + days + "</span>" + " Ngày  " + "<span>" + hours + "</span>" + " giờ "
-        + "<span>" + minutes + "</span>" + " phút " + "<span>" + seconds + "</span>" + " giây ";
